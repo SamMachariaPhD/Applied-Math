@@ -7,6 +7,9 @@
 :doctype: book
 :toc:
 :icons: font 
+:stem: asciimath
+:figure-caption: Figure
+:figure-number: 
 
 == Introduction 
 
@@ -25,14 +28,32 @@ A physicist, an engineer, and a psychologist are called in as consultants to a d
 "Assume the cow is a sphere ..."
 -- The physicist 
 
-_Lawrence M. Krauss_ footnote:disclaimer[You may read more from the reference <<Lawrence-M-Krauss>>, _The Fear of Physics_.]
+_Before doing anything else, abstract out all irrelevant details!_ footnote:disclaimer[You may read more from the reference <<Lawrence-M-Krauss>>, _The Fear of Physics_.]
 ====
 
 
-[NOTE]
-.How quickly does a candle burn?
+=== Cow's weight, hide, and its limits
 ====
-We could perform a number of experiments to find the solution to our question.
+* Given that the weight of a normal cow is stem:[x], what is the weight of a super-cow thrice as big?
+
+* If I wanted to make leather shoes out of the super-cow's hide, how much more hide would it yield more than the normal cow?
+
+* In comparison to the normal cow, how much pressure is the supercow's skin experiencing?
+
+[#img-cowLeather] 
+.From: the brutal realities of leather. 
+[link=https://www.totallyveganbuzz.com/news/the-brutal-realities-of-leather-one-billion-animals-slaughtered-and-abused-every-year/] 
+image::cow_leather.png[cowLeather,200,100]
+====
+
+=== How quickly does a candle burn?
+====
+Formulate a mathematical equations to predict how long it takes for a candle to burn out. 
+
+[#img-burningCandle] 
+.From: which candle will burn out first? 
+[link=https://vceguide.com/which-candle-will-burn-out-first/] 
+image::burning_candle.jpg[burningCandle,200,100]
 ====
 
 
