@@ -46,9 +46,34 @@ _Before doing anything else, abstract out all irrelevant details!_ footnote:disc
 image::cow_leather.png[cowLeather,200,100]
 ====
 
+====
+Let the weight of the normal cow stem:[x = W_(nc) = mg]
+
+[stem]
+++++
+W_(nc) = mg
+m = rho xx v
+v = (4 pi /3)r^3 
+++++
+
+* A cow has an irregular shape that would be complicated to calculate its volume. For simplicity, let's approximate that shape into a sphere.
+====
+
+// stem:[sqrt(4) = 2]
+
+// Water (stem:[H_2O]) is a critical component.
+
+// A matrix can be written as stem:[[[a,b\],[c,d\]\]((n),(k))]. 
+
+// [stem]
+// ++++
+// sqrt(4) = 2
+// ++++
+
+
 === How quickly does a candle burn?
 ====
-Formulate a mathematical equations to predict how long it takes for a candle to burn out. 
+* Formulate a mathematical equations to predict how long it takes for a candle to burn out. 
 
 [#img-burningCandle] 
 .From: which candle will burn out first? 
