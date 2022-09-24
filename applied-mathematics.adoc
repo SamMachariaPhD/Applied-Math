@@ -1,6 +1,7 @@
 = Applied Mathematics: Examples   
-:author: Dr. Sam Macharia 
-:email: Dr.SamMacharia@gmail.com 
+Dr. Sam Macharia <https://orcid.org/0000-0002-7326-7502>; Contact Form <https://bit.ly/ContactDrSam>
+//:author: Dr. Sam Macharia
+// :email: Dr.SamMacharia@gmail.com 
 // Dr. Sam Macharia <Dr.SamMacharia@gmail.com>; 
 :title-page-background-image: image:spherical_cow.jpeg[fit=none, pdfwidth=55%,position=bottom left]
 // :title-logo-image: image:spherical_cow.jpeg[top=25%,align=center,pdfwidth=0.5in]
@@ -10,11 +11,24 @@
 :stem: asciimath
 :figure-caption: Figure
 :figure-number: 
+:source-highlighter: rouge // not used 
+:source-highlighter: highlight.js
+:stem: latexmath 
+:eqnums: all
+// :icons: image
+// :iconsdir: icons
+// :icontype: svg
+// icon:idea[width=50,float="left"] 
+
+// asciidoctor -r asciidoctor-mathematical -a mathematical-format=svg README.adoc
+// asciidoctor-pdf -a optimize README.adoc
+
+
 
 == Introduction 
 
-[TIP]
-:tip-caption: pass:[&#128161;]
+
+[CAUTION]
 .The spherical cow <<Lawrence-M-Krauss>> 
 ====
 A physicist, an engineer, and a psychologist are called in as consultants to a dairy farm whose production has been below par. Each is given time to inspect the details of the operation before making a report.
@@ -33,6 +47,7 @@ _Before doing anything else, abstract out all irrelevant details!_ footnote:disc
 
 
 === Cow's weight, hide, and its limits
+[NOTE]
 ====
 * Given that the weight of a normal cow is stem:[x], what is the weight of a super-cow thrice as big?
 
@@ -47,31 +62,61 @@ image::cow_leather.png[cowLeather,200,100]
 ====
 
 ====
-Let the weight of the normal cow stem:[x = W_(nc) = mg]
+* Let the weight of the normal cow stem:[x = W_{nc} = mg]
 
 [stem]
 ++++
-W_(nc) = mg
-m = rho xx v
-v = (4 pi /3)r^3 
+W_{nc} = mg
+++++
+[stem]
+++++
+m = \rho \times v
 ++++
 
 * A cow has an irregular shape that would be complicated to calculate its volume. For simplicity, let's approximate that shape into a sphere.
+
+[stem]
+++++
+v = \frac{4\pi}{3} r^3 
+++++
+[stem]
+++++
+W_{nc} = \rho \times \frac{4\pi}{3} r^3 \times g
+++++
+
+* The weight of a supercow, stem:[W_{sc}], thrice as big:
+
+[stem]
+++++
+W_{sc} = \rho \times \frac{4\pi}{3} (3r)^3 \times g
+++++
+[stem]
+++++
+W_{sc} = 27 \times \rho \times \frac{4\pi}{3} r^3 \times g
+++++
 ====
 
-// stem:[sqrt(4) = 2]
+[TIP]
+====
+A supercow *thrice* as big as the normal cow would weigh *27 times* more than the normal cow.
+====
 
-// Water (stem:[H_2O]) is a critical component.
 
-// A matrix can be written as stem:[[[a,b\],[c,d\]\]((n),(k))]. 
+[source, python]
+----
+import numpy as np
 
-// [stem]
-// ++++
-// sqrt(4) = 2
-// ++++
+def cow_weight(r):
+    cw = rho * ((4*np.pi)/3)*r**3 * g
+    return cw
+
+rho1 = 1850 # kg/m^3
+g = 9.8 # m/m^2
+----
 
 
 === How quickly does a candle burn?
+[NOTE]
 ====
 * Formulate a mathematical equations to predict how long it takes for a candle to burn out. 
 
