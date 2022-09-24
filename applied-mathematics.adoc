@@ -49,11 +49,11 @@ _Before doing anything else, abstract out all irrelevant details!_ footnote:disc
 === Cow's weight, hide, and its limits
 [NOTE]
 ====
-* Given that the weight of a normal cow is stem:[x], what is the weight of a super-cow thrice as big?
+* Given that the weight of a normal cow is stem:[x], what is the weight of a super cow thrice as big?
 
-* If I wanted to make leather shoes out of the super-cow's hide, how much more hide would it yield more than the normal cow?
+* If I wanted to make leather shoes out of the super cow's hide, how much more hide would it yield more than the normal cow?
 
-* In comparison to the normal cow, how much pressure is the supercow's skin experiencing?
+* In comparison to the normal cow, how much pressure is the super cow's skin experiencing?
 
 [#img-cowLeather] 
 .From: the brutal realities of leather. 
@@ -84,7 +84,7 @@ v = \frac{4\pi}{3} r^3
 W_{nc} = \rho \times \frac{4\pi}{3} r^3 \times g
 ++++
 
-* The weight of a supercow, stem:[W_{sc}], thrice as big:
+* The weight of a super cow, stem:[W_{sc}], thrice as big:
 
 [stem]
 ++++
@@ -98,21 +98,46 @@ W_{sc} = 27 \times \rho \times \frac{4\pi}{3} r^3 \times g
 
 [TIP]
 ====
-A supercow *thrice* as big as the normal cow would weigh *27 times* more than the normal cow.
+A super cow *thrice* as big as the normal cow would weigh *27 times* more than the normal cow.
 ====
 
+Having formulated the necessary mathematical equations that describe the problem at hand, we can translate the equations into a computer program. We shall use `Python` programming. Install python to your computer using `Anaconda` <https://docs.anaconda.com/anaconda/install/>.
 
 [source, python]
 ----
+# import the libralies you intend to use
 import numpy as np
 
+# translate the main equation into a function
 def cow_weight(r):
     cw = rho * ((4*np.pi)/3)*r**3 * g
     return cw
 
-rho1 = 1850 # kg/m^3
-g = 9.8 # m/m^2
+# define the variables
+rho = 1850 # kg/m^3 bone?[https://physics.nist.gov/cgi-bin/Star/compos.pl?matno=119] (assumed constant)
+g = 9.8 # m/m^2 (assumed constant) 
+r1 = 0.6 # m (normal cow radius)
+r2 = 3*r1 # m (super cow radius - thrice)
+
+# get answers to your questions
+Wnc = cow_weight(r1)
+Wsc = cow_weight(r2)
+ratio = Wsc/Wnc
+
+# print answers (IN SCIENTIFIC NOTATION!) 
+print("Normal Cow Weight ~\t %.2E kg.m/s^2" %Wnc) # (= N) confirm units
+print("Super Cow Weight ~\t %.2E N" %Wsc)
+print("Super Cow Weighs ~%.2E more than the Normal Cow" %ratio)
 ----
+
+Output: <https://www.online-python.com/jKNTHMEVUk>
+----
+Normal Cow Weight ~	 1.64E+04 kg.m/s^2
+Super Cow Weight ~	 4.43E+05 N
+Super Cow Weighs ~2.70E+01 more than the Normal Cow
+----
+
+TIP: Scientific notation gives you a better visualization of size. Following the same method and taking the hide surface area to be stem:[A = 4\pi r^2], and exerted pressure to be stem:[P = \frac{F}{A}], we can deduce that _a cow #thrice# as big weighs #27 times# as much and holds #9 times# as much skin and #3 times# as much pressure due to its weight_. Here, the critical *scaling factor* is the *radius*. 
 
 
 === How quickly does a candle burn?
@@ -125,7 +150,6 @@ g = 9.8 # m/m^2
 [link=https://vceguide.com/which-candle-will-burn-out-first/] 
 image::burning_candle.jpg[burningCandle,200,100]
 ====
-
 
 
 [bibliography]
