@@ -1,5 +1,5 @@
 = Applied Mathematics: Examples   
-Dr. Sam Macharia <https://orcid.org/0000-0002-7326-7502>; Contact Form <https://bit.ly/ContactDrSam>
+Dr. Sam Macharia <https://orcid.org/0000-0002-7326-7502>; Contact <https://bit.ly/ContactDrSam>; Home <https://SiliconWit.com/>
 //:author: Dr. Sam Macharia
 // :email: Dr.SamMacharia@gmail.com 
 // Dr. Sam Macharia <Dr.SamMacharia@gmail.com>; 
@@ -8,6 +8,7 @@ Dr. Sam Macharia <https://orcid.org/0000-0002-7326-7502>; Contact Form <https://
 :doctype: book
 :toc:
 :icons: font 
+:favicon: favicon.png
 :stem: asciimath
 :figure-caption: Figure
 :figure-number: 
@@ -20,7 +21,7 @@ Dr. Sam Macharia <https://orcid.org/0000-0002-7326-7502>; Contact Form <https://
 // :icontype: svg
 // icon:idea[width=50,float="left"] 
 
-// asciidoctor -r asciidoctor-mathematical -a mathematical-format=svg README.adoc
+// asciidoctor -r asciidoctor-mathematical -a mathematical-format=svg applied-mathematics.adoc
 // asciidoctor-pdf -a optimize README.adoc
 
 
@@ -46,12 +47,12 @@ _Before doing anything else, abstract out all irrelevant details!_ footnote:disc
 ====
 
 
-=== Cow's weight, hide, and its limits
+=== Cow's weight, hide, and limits
 [NOTE]
 ====
 * Given that the weight of a normal cow is stem:[x], what is the weight of a super cow thrice as big?
 
-* If I wanted to make leather shoes out of the super cow's hide, how much more hide would it yield more than the normal cow?
+* If I wanted to make leather shoes out of the super cow's hide, how much more hide would it yield than the normal cow?
 
 * In comparison to the normal cow, how much pressure is the super cow's skin experiencing?
 
@@ -105,7 +106,7 @@ Having formulated the necessary mathematical equations that describe the problem
 
 [source, python]
 ----
-# import the libralies you intend to use
+# import the libraries you intend to use
 import numpy as np
 
 # translate the main equation into a function
@@ -143,7 +144,7 @@ TIP: Scientific notation gives you a better visualization of size. Following the
 === How quickly does a candle burn?
 [NOTE]
 ====
-* Formulate a mathematical equations to predict how long it takes for a candle to burn out. 
+* Formulate mathematical equations to predict how long it takes for a candle to burn out. 
 
 [#img-burningCandle] 
 .From: which candle will burn out first? 
