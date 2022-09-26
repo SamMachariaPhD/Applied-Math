@@ -16,6 +16,7 @@ Dr. Sam Macharia <https://orcid.org/0000-0002-7326-7502>; Contact <https://bit.l
 :source-highlighter: highlight.js
 :stem: latexmath 
 :eqnums: all
+:imagesdir: applied-mathematics-figs
 // :icons: image
 // :iconsdir: icons
 // :icontype: svg
