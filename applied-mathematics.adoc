@@ -1,5 +1,7 @@
 = Applied Mathematics: Examples   
 Dr. Sam Macharia <https://orcid.org/0000-0002-7326-7502>; Contact <https://bit.ly/ContactDrSam>; Home <https://SiliconWit.com/>
+:description: Engineering, Computing, Science, and Philosophy 
+:docinfo: shared-head
 //:author: Dr. Sam Macharia
 // :email: Dr.SamMacharia@gmail.com 
 // Dr. Sam Macharia <Dr.SamMacharia@gmail.com>; 
@@ -15,6 +17,7 @@ Dr. Sam Macharia <https://orcid.org/0000-0002-7326-7502>; Contact <https://bit.l
 :source-highlighter: rouge // not used 
 :source-highlighter: highlight.js
 :stem: latexmath 
+:numbered:
 :eqnums: all
 :imagesdir: applied-mathematics-figs
 // :icons: image
