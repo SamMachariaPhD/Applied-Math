@@ -27,7 +27,7 @@ Dr. Sam Macharia <https://orcid.org/0000-0002-7326-7502>; Contact <https://bit.l
 
 // asciidoctor -r asciidoctor-mathematical -a mathematical-format=svg applied-mathematics.adoc
 // asciidoctor-pdf -a optimize README.adoc
-
+//  jupyter nbconvert --to html notebook.ipynb 
 
 
 == Introduction 
@@ -69,36 +69,21 @@ image::cow_leather.png[cowLeather,200,100]
 ====
 * Let the weight of the normal cow stem:[x = W_{nc} = mg]
 
-[stem]
-++++
-W_{nc} = mg
-++++
-[stem]
-++++
-m = \rho \times v
-++++
+[%hardbreaks]
+stem:[W_{nc} = mg]
+stem:[m = \rho \times v]
 
 * A cow has an irregular shape that would be complicated to calculate its volume. For simplicity, let's approximate that shape into a sphere.
 
-[stem]
-++++
-v = \frac{4\pi}{3} r^3 
-++++
-[stem]
-++++
-W_{nc} = \rho \times \frac{4\pi}{3} r^3 \times g
-++++
+[%hardbreaks]
+stem:[v = \frac{4\pi}{3} r^3] 
+stem:[W_{nc} = \rho \times \frac{4\pi}{3} r^3 \times g]
 
 * The weight of a super cow, stem:[W_{sc}], thrice as big:
 
-[stem]
-++++
-W_{sc} = \rho \times \frac{4\pi}{3} (3r)^3 \times g
-++++
-[stem]
-++++
-W_{sc} = 27 \times \rho \times \frac{4\pi}{3} r^3 \times g
-++++
+[%hardbreaks]
+stem:[W_{sc} = \rho \times \frac{4\pi}{3} (3r)^3 \times g]
+stem:[W_{sc} = 27 \times \rho \times \frac{4\pi}{3} r^3 \times g]
 ====
 
 [TIP]
@@ -107,6 +92,11 @@ A super cow *thrice* as big as the normal cow would weigh *27 times* more than t
 ====
 
 Having formulated the necessary mathematical equations that describe the problem at hand, we can translate the equations into a computer program. We shall use `Python` programming. Install python to your computer using `Anaconda` <https://docs.anaconda.com/anaconda/install/>.
+
+// https://stackoverflow.com/questions/46960524/how-to-include-raw-html-file
+// ++++
+// include::spherical-cow.html[]
+// ++++
 
 [source, python]
 ----
@@ -154,6 +144,17 @@ TIP: Scientific notation gives you a better visualization of size. Following the
 .From: which candle will burn out first? 
 [link=https://vceguide.com/which-candle-will-burn-out-first/] 
 image::burning_candle.jpg[burningCandle,200,100]
+====
+
+=== Giants who could not exist
+[NOTE]
+====
+* Using simple mathematical reasoning, explain why a giant 12 times larger than a normal human could not exist. Apart from its size, the giant is in all aspects identical to human. 
+
+[#img-nephilim] 
+.From: Giants of Old (Nephilim) 
+[link=https://discover.hubpages.com/education/Giants-of-Old-Nephilim] 
+image::nephilim.jpg[nephilim,200,100]
 ====
 
 
