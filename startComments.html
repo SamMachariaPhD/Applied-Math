@@ -1,0 +1,30 @@
+<!-- Step 1: Include the JavaScript SDK on your page once, ideally right after the opening body tag. -->
+<!-- <div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v15.0&appId=787925512262196&autoLogAppEvents=1" nonce="hUpr0zj0"></script> -->
+
+<!-- add the button! (body) -->
+<!-- <applause-button style="width: 58px; height: 58px;"/> -->
+
+<!-- Start facebook comment section -->
+<!-- Step 2: Place this code wherever you want the plugin to appear on your page. -->
+<!-- <hr>
+
+<div class="fb-comments" data-href="https://siliconwit.com/solid-mechanics" data-width="" data-numposts="20"></div>
+
+<hr> -->
+
+<!-- End facebook comment section -->
+
+<!-- Start commentics comment section -->
+
+<!-- <div id="commentics"></div> -->
+
+<!-- Start commentics php comment section -->
+
+<?php
+$cmtx_identifier = '1';
+$cmtx_reference  = 'Comments';
+$cmtx_folder     = '/comments/';
+require($_SERVER['DOCUMENT_ROOT'] . $cmtx_folder . 'frontend/index.php');
+?>
+

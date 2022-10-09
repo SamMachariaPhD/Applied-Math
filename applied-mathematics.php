@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -872,8 +873,8 @@ Scientific notation gives you a better visualization of size. Following the same
 <!-- Start commentics php comment section -->
 
 <?php
-$cmtx_identifier = '1';
-$cmtx_reference  = 'Comments';
+$cmtx_identifier = 'applied-mathematics';
+$cmtx_reference  = 'applied-mathematics';
 $cmtx_folder     = '/comments/';
 require($_SERVER['DOCUMENT_ROOT'] . $cmtx_folder . 'frontend/index.php');
 ?>
