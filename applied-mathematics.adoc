@@ -21,6 +21,10 @@ Dr. Sam Macharia <https://orcid.org/0000-0002-7326-7502>; Home <https://SiliconW
 :imagesdir: applied-mathematics-figs
 :experimental:
 
+++++
+include::subscribe.html[]
+++++
+
 // asciidoctor -r asciidoctor-mathematical -a mathematical-format=svg applied-mathematics.adoc
 // asciidoctor-pdf -a optimize README.adoc
 //  jupyter nbconvert --to html notebook.ipynb 
